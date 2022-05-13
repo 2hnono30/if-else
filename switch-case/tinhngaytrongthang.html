@@ -14,38 +14,25 @@
     <button type="button" onclick="songay()">Tính số ngày </button>
     <p id="result"></p>
     <script>
-        let thang_1 = "1";
-        let thang_2 = "2";
-        let thang_3 = "3";
-        let thang_4 = "4";
-        let thang_5 = "5";
-        let thang_6 = "6";
-        let thang_7 = "7";
-        let thang_8 = "8";
-        let thang_9 = "9";
-        let thang_10 = "10";
-        let thang_11 = "11";
-        let thang_12 = "12";
-
         function songay() {
-            let inputmonth = document.getElementById("inputmonth").value;
+            let inputmonth = +document.getElementById("inputmonth").value;
             switch (inputmonth) {
-                case thang_1:
-                case thang_3:
-                case thang_5:
-                case thang_7:
-                case thang_8:
-                case thang_10:
-                case thang_12:
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
                     document.getElementById("result").innerHTML = "tháng có 31 ngày";
                     break;
-                case thang_4:
-                case thang_6:
-                case thang_9:
-                case thang_11:
+                case 4:
+                case 6:
+                case 9:
+                case 11:
                     document.getElementById("result").innerHTML = "tháng có 30 ngày";
                     break;
-                case thang_2:
+                case 2:
                     document.getElementById("result").innerHTML = "tháng 2 có 28 ngày hoặc 29 ngày";
                     break;
                 default:
